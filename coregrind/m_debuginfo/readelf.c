@@ -285,7 +285,8 @@ Bool get_elf_symbol_info (
 #     if defined(VGPV_arm_linux_android) \
          || defined(VGPV_x86_linux_android) \
          || defined(VGPV_mips32_linux_android) \
-         || defined(VGPV_arm64_linux_android)
+         || defined(VGPV_arm64_linux_android) \
+         || defined(VGPV_amd64_linux_android)
    Addr available_size = 0;
 #define COMPUTE_AVAILABLE_SIZE(segsvma, segsize) \
         available_size = segsvma + segsize - sym_svma
@@ -478,7 +479,8 @@ Bool get_elf_symbol_info (
 #     if defined(VGPV_arm_linux_android) \
          || defined(VGPV_x86_linux_android) \
          || defined(VGPV_mips32_linux_android) \
-         || defined(VGPV_arm64_linux_android)
+         || defined(VGPV_arm64_linux_android) \
+         || defined(VGPV_amd64_linux_android)
       *sym_size_out = available_size ? available_size : 2048;
 #     else
       if (TRACE_SYMTAB_ENABLED) {

@@ -2151,3 +2151,5 @@
 
 # /VEX/switchback/
 /VEX/switchback/switchback
+
+cmake-build-*

@@ -2555,7 +2555,8 @@ void __aeabi_unwind_cpp_pr1(void){
     && (defined(VGPV_arm_linux_android) \
         || defined(VGPV_x86_linux_android) \
         || defined(VGPV_mips32_linux_android) \
-        || defined(VGPV_arm64_linux_android))
+        || defined(VGPV_arm64_linux_android) \
+        || defined(VGPV_amd64_linux_android))
 
 /* Replace __aeabi_memcpy* functions with vgPlain_memcpy. */
 void *__aeabi_memcpy(void *dest, const void *src, SizeT n);
